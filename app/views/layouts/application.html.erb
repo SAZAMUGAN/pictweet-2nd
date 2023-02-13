@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pictweet2nd</title>
+    <title>Pictweet-2nd</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__bar row">
+        <h1 class="grid-6"><a href="/">PicTweet-2nd</a></h1>
+        <div class="user_nav grid-6">
+          <a class="post" href="/tweets/new">投稿する</a>
+        </div>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <p>
+        Copyright PicTweet-2nd 2023.
+      </p>
+    </footer>
   </body>
 </html>
